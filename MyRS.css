@@ -1,0 +1,246 @@
+ body{
+    background-color: #e7e6f7;
+ }
+ h1{
+  color: #5d6986;
+  font-family:'Times New Roman', Times, serif;
+  font-size:60px;
+ }
+ .icon{
+  width: 6%;
+  height: 6%;
+ }
+
+
+/*Caja De Login con Div*/
+  .login{
+    
+    display: block;
+    
+    color: #c6d2ed;
+    border: solid #40485c;
+    border-radius: 9px;
+    background-color: #5d6986;
+    margin-top: 30%;
+    padding:5px 5px 5px 5px;
+    margin-left: 0em;
+    margin-top: -70px;
+    padding-left: 22em;
+  }
+  .login>p{
+    float: initial;
+    padding-left: 9em;
+  }
+  .login>a{
+    float: right;
+    padding-right: 150px;
+    color: #c6d2ed;
+    text-decoration:underline;
+    text-transform: uppercase;
+   }
+   .regis{
+   margin-left: 10em;   
+  }
+  
+/*menu horizontal*/
+  a{
+    text-decoration: none;
+    display: block;
+    color: #c6d2ed;
+    
+  }
+  li{
+    float:left;
+    margin-right:10px;
+    display:block;
+    padding:6px;
+    margin-left: 0px;
+    background-color: #5d6986;
+  }
+  li:hover{
+    padding: 6px;
+    border-radius: 8px;
+    background-color: #40485c;
+  }
+
+/*Calendario*/
+  .iframe_calendar{
+    margin-left: 5em;
+  }
+    /* intrucciones generales*/
+      *{ margin:auto;}
+    /*cabecera de la pagina*/
+      h1{ text-align: center;
+          padding: 0.5em;}
+    
+    /*div principal del calendario*/
+        #calendario{
+          border: 4px solid #3d4658;
+          max-width: 536px;
+          background-color: c6d2ed;
+          text-align: center;
+        }
+    /*table del calendario*/
+        #diasc{
+          border: 1px solid #3d4658;
+          border-collapse: separate;
+          border-spacing: 4px;
+        }
+        #diasc th,#diasc td{
+          font:normal 14pt arial;
+          border-radius: 88px;
+          width: 70px;
+          height: 30px;
+          text-align: center;
+        }
+        #diasc th{
+          color: #3d4658;
+          background-color: white;
+        }
+        #diasc td{
+          color: #976e80;
+          background-color: rgb(189, 187, 187);
+        }
+    /*linea de la fecha actual*/
+        #fechaactual {
+          font: bold 12pt arial;
+          padding: 0.4em;
+        }
+        #fechaactual i{
+          cursor: pointer;
+        }
+        #fechaactual i:hover{
+          color: white;
+          text-decoration: underline;
+        }
+    /*formulario de busqueda de fechas*/
+        #buscafecha {
+          background-color: #3d4658;
+          color: rgb(189, 187, 187);
+          padding: 5px;
+        }
+        #buscafecha select, #buscafecha input{
+          background-color: white;
+          color: #3d4658;
+          font: bold 10pt arial;
+        }
+        #buscafecha [type=text]{
+          text-align: center;
+          
+        }
+        #buscafecha [type=button]{
+          cursor: pointer;
+        }
+
+        /*cabecera calendario*/
+        #anterior{
+          float: left;
+          width: 100px;
+          font: bold 12pt arial;
+          padding: 0.5em 0.1em;
+          cursor: pointer;
+        }
+        #posterior{
+          float: right;
+          width: 100px;
+          font: bold 12pt arial;
+          padding: 0.5em 0.1em;
+          cursor: pointer;
+        }
+        #anterior:hover{
+          color: white;
+          text-decoration: underline;
+        }
+        #posterior:hover{
+          color: white;
+          text-decoration: underline;
+        }
+        #titulos{
+          font: normal 20pt "arial black";
+          padding: 0.2em;
+        }
+
+/*contenedor perfil pj*/
+    .vist_perfil{
+      background-color: #E3D0D8;
+      border: solid #AEA3B0;
+      border-radius: 10px;
+      float:unset;
+      margin-left: 40px;
+      margin-right: 110px;
+      margin-bottom: 20px;
+    }
+    .info_p{
+      float: right;
+      margin-right: 240px;
+      padding-top: 20px;
+    }
+    .info_p p{
+      margin-bottom: 10px;
+    }
+    .vist_perfil img{
+      width: 19%;
+      height: 19%;
+      margin-left: 40px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 15%;
+    }
+/*3d4658*/
+/*Calculadora*/
+      /*aspectos generales_ border y color de fondo*/
+        .calculadora{
+          float: right;
+          border: 3px #AEA3B0 ridge;
+          width: 250px;
+          text-align: center;
+          background-color: #E3D0D8;
+          padding: 4px;
+          margin-bottom: 30px;
+          font-size: 20px;
+          border-radius: 8px;
+        }
+      /*pantalla de visulizacion: bordes,posicion, color fondo, estilo letra*/
+        .pantalla{
+          width: 185px;
+          border: 2px black solid;
+          text-align: center;
+          position: relative;
+          left: 23px;
+          padding: 0px 5px;
+          background-color: white;
+          font-family:'Times New Roman', Times, serif;
+          
+          overflow: hidden;
+        }
+        p[id=textoPantalla]{
+          background-color: #3d4658;
+          color: #c6d2ed;
+          border-radius: 5px;
+          padding: 2px;
+          margin: 9px;
+        }
+        p:hover[id=textoPantalla]{
+          background-color: #c6d2ed;
+          color:#3d4658;
+          transition: 0.8s;
+        }
+        /*botones normales: anchura y margen*/
+          .calculadora [type=button]{
+            width: 35px;
+            padding: 0;
+            color:#3d4658;
+            background-color: #c6d2ed;
+            border-color: white;
+            border-radius: 4px;
+          }
+          .calculadora:hover [type=button]{
+            background-color: #3d4658;
+            color: #c6d2ed;
+            transition: 0.8s;
+          }
+        /*botones especiales*/
+          .calculadora input.largo{
+            color: #3d4658;
+            width: 60px;
+          }

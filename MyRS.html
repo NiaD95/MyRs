@@ -1,0 +1,70 @@
+<html>
+<head>
+    <link rel="stylesheet" href="MyRS.css">
+    <title>MyRS</title><link rel="icon" href="brillante.png" >
+    <script type="text/javascript" src="calculadora.js"></script>
+</head>
+<body>
+    <div class="cont_title">
+        <h1>MyRS</h1>
+    </div><br><br>
+    <div class="menu">
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#">Ajustes</a></li>
+        <li><a href="#">MD</a></li>
+        <li><a href="#">Exit</a></li>
+    </ul>
+    </div><br><br><br>
+    <div class="login">
+        Name:<input type="text" id="usname">
+        Passwd:<input type="password" id="psswd"><br><br>
+        <input type="button" id="send" value="Enviar">
+        <input type="button" id="registro" value="Registrarse"><a href="#" class="regis"></a>
+        </div><br>
+    <hr><br>
+    
+    <br>
+    <div class="calculadora">
+        <form action="#" name="calculadora" id="calculadora">
+            <p id="textoPantalla">0</p>
+            <p>
+                <input type="button" class="largo" value="Retr" onclick="retro()"/>
+                <input type="button" class="largo" value="CE" onclick="borradoParcial()"/>
+                <input type="button" class="largo" value="C" onclick="borradoTotal()"/>
+            </p>
+            <p>
+                <input type="button" value="7" onclick="numero('7')"/>
+                <input type="button" value="8" onclick="numero('8')"/>
+                <input type="button" value="9" onclick="numero('9')"/>
+                <input type="button" value="/" onclick="operar('/')"/>
+                <input type="button" value="Raiz" onclick="raiz()"/>
+            </p>
+            <p>
+                <input type="button" value="4" onclick="numero('4')"/>
+                <input type="button" value="5" onclick="numero('5')"/>
+                <input type="button" value="6" onclick="numero('6')"/>
+                <input type="button" value="*" onclick="operar('*')"/>
+                <input type="button" value="%" onclick="porcent()"/>
+            </p>
+            <p>
+                <input type="button" value="1" onclick="numero('1')"/>
+                <input type="button" value="2" onclick="numero('2')">
+                <input type="button" value="3" onclick="numero('3')"/>
+                <input type="button" value="-" onclick="operar('-')"/>
+                <input type="button" value="1/x" onclick="inve()"/>
+            </p>
+            <p>
+                <input type="button" value="0" onclick="numero('0')"/>
+                <input type="button" value="+/-" onclick="opuest()">
+                <input type="button" value="." onclick="numero('.')"/>
+                <input type="button" value="+" onclick="operar('+')"/>
+                <input type="button" value="=" onclick="igualar()"/>
+            </p>
+        </form>
+    </div><br>
+    <iframe src="calendario.html" class="iframe_calendar" height="70%" width="80%"></iframe>
+</body>
+<footer></footer>
+</html>
